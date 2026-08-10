@@ -3,7 +3,8 @@
     "bandName": "Sembilan Tera",
     "tagline": "Pop Alternatif — Bandung",
     "issueLabel": "Volume I — Terbentuk 2025",
-    "label": "Axara Pro Indonesia"
+    "label": "Axara Pro Indonesia",
+    "logoImage": "assets/img/logo-mark.png"
   },
   "hero": {
     "kicker": "Profil Artis",
@@ -51,6 +52,7 @@
     "description": "Mini album yang dibuat bukan untuk menyenangkan semua orang, melainkan untuk menemani mereka yang diam-diam sedang terluka. Berisi 5 lagu yang jujur soal rasa sakit, luka, kehilangan, amarah, dan kecewa. Semua karya telah tersedia di berbagai platform digital streaming serta dilengkapi Musik Video resmi di kanal YouTube Sembilan Tera.",
     "trackCount": "5 Lagu",
     "spotifyUrl": "https://open.spotify.com/intl-id/artist/1nEhg8AfnnLJv3RasrPNGA",
+    "spotifyEmbedUrl": "https://open.spotify.com/embed/artist/1nEhg8AfnnLJv3RasrPNGA?utm_source=generator&theme=0",
     "groupImage": "assets/img/group-casual.jpeg"
   },
   "character": {
@@ -87,6 +89,24 @@
       { "name": "Spotify", "url": "https://open.spotify.com/intl-id/artist/1nEhg8AfnnLJv3RasrPNGA" },
       { "name": "YouTube", "url": "https://youtube.com/@sembilantera" },
       { "name": "YouTube Music", "url": "https://music.youtube.com/" }
+    ]
+  },
+  "mediaKit": {
+    "kicker": "Press Kit",
+    "title": "Media Kit",
+    "intro": "Foto resolusi tinggi untuk keperluan promosi, flyer, atau publikasi oleh venue/media partner. Gratis dipakai dengan kredit ke Sembilan Tera.",
+    "images": [
+      { "image": "assets/img/mediakit-group-01.jpg", "label": "Grup — Candid" },
+      { "image": "assets/img/mediakit-group-02.jpg", "label": "Grup — Studio" },
+      { "image": "assets/img/mediakit-group-03.jpg", "label": "Grup — Dramatis" },
+      { "image": "assets/img/mediakit-group-04.jpg", "label": "Grup — Santai" },
+      { "image": "assets/img/mediakit-group-05.jpg", "label": "Grup — Formal" },
+      { "image": "assets/img/mediakit-portrait-01.jpg", "label": "Portrait — 01" },
+      { "image": "assets/img/mediakit-portrait-02.jpg", "label": "Portrait — 02" },
+      { "image": "assets/img/mediakit-portrait-03.jpg", "label": "Portrait — 03" },
+      { "image": "assets/img/mediakit-portrait-04.jpg", "label": "Portrait — 04" },
+      { "image": "assets/img/mediakit-portrait-05.jpg", "label": "Portrait — 05" },
+      { "image": "assets/img/mediakit-portrait-06.jpg", "label": "Portrait — 06" }
     ]
   },
   "colophon": {
