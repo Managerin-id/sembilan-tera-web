@@ -17,11 +17,8 @@
 <!-- MASTHEAD -->
 <header class="masthead">
   <div class="masthead-row">
-    <div class="mark" aria-hidden="true">
-      <svg viewBox="0 0 100 100" class="mark-svg">
-        <path d="M62 12 A38 38 0 1 0 62 88 A30 30 0 1 1 62 12 Z" />
-        <path d="M50 8 L54 20 L67 20 L57 28 L61 40 L50 32 L39 40 L43 28 L33 20 L46 20 Z" />
-      </svg>
+    <div class="mark">
+      <img data-field-src="masthead.logoImage" src="assets/img/logo-mark.png" alt="Logo Sembilan Tera">
     </div>
     <div class="masthead-center">
       <span class="masthead-eyebrow" data-field="masthead.issueLabel">Volume I — Terbentuk 2025</span>
@@ -39,7 +36,8 @@
     <a href="#diskografi"><span class="toc-num">03</span> Diskografi</a>
     <a href="#karakter"><span class="toc-num">04</span> Karakter Musik</a>
     <a href="#dokumentasi"><span class="toc-num">05</span> Dokumentasi</a>
-    <a href="#kontak"><span class="toc-num">06</span> Kontak</a>
+    <a href="#mediakit"><span class="toc-num">06</span> Media Kit</a>
+    <a href="#kontak"><span class="toc-num">07</span> Kontak</a>
   </nav>
 </header>
 
@@ -52,7 +50,7 @@
     <dl class="facts" id="facts-list"></dl>
   </div>
   <figure class="hero-image">
-    <img data-field-src="hero.image" src="assets/img/group-hero.jpg" alt="Sembilan Tera, foto grup">
+    <img data-field-src="hero.image" src="assets/img/group-hero.jpeg" alt="Sembilan Tera, foto grup">
     <figcaption data-field="hero.imageCaption">Sembilan Tera, format lengkap.</figcaption>
   </figure>
 </section>
@@ -94,7 +92,7 @@
   </div>
   <div class="disco-spread">
     <figure class="disco-cover">
-      <img data-field-src="discography.cover" src="assets/img/ep-cover.jpg" alt="Sampul EP Sementara Itu">
+      <img data-field-src="discography.cover" src="assets/img/ep-cover.jpeg" alt="Sampul EP Sementara Itu">
     </figure>
     <div class="disco-info">
       <span class="disco-eyebrow"><span data-field="discography.releaseType">EP</span> · <span data-field="discography.releaseYear">2025</span></span>
@@ -102,12 +100,15 @@
       <p class="disco-desc" data-field="discography.description">Deskripsi rilisan.</p>
       <div class="disco-meta">
         <span data-field="discography.trackCount">5 Lagu</span>
-        <a data-field-href="discography.spotifyUrl" href="#" target="_blank" rel="noopener" class="disco-link">Dengarkan di Spotify →</a>
+        <a data-field-href="discography.spotifyUrl" href="#" target="_blank" rel="noopener" class="disco-link">Buka di Spotify →</a>
       </div>
     </div>
   </div>
+  <div class="disco-player">
+    <iframe id="spotify-embed" src="" width="100%" height="352" frameborder="0" allowfullscreen loading="lazy" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" title="Spotify player Sembilan Tera"></iframe>
+  </div>
   <figure class="disco-group">
-    <img data-field-src="discography.groupImage" src="assets/img/group-casual.jpg" alt="Sembilan Tera">
+    <img data-field-src="discography.groupImage" src="assets/img/group-casual.jpeg" alt="Sembilan Tera">
   </figure>
 </section>
 
@@ -131,6 +132,18 @@
     <h3 class="section-title" data-field="gallery.title">Dokumentasi Perform</h3>
   </div>
   <div class="gallery-grid" id="gallery-grid"></div>
+</section>
+
+<div class="divider"><span class="divider-mark">✦</span></div>
+
+<!-- MEDIA KIT -->
+<section class="section media-kit" id="mediakit">
+  <div class="section-head">
+    <span class="kicker" data-field="mediaKit.kicker">Press Kit</span>
+    <h3 class="section-title" data-field="mediaKit.title">Media Kit</h3>
+    <p class="section-intro" data-field="mediaKit.intro">Foto resolusi tinggi untuk keperluan promosi.</p>
+  </div>
+  <div class="mediakit-grid" id="mediakit-grid"></div>
 </section>
 
 <!-- SOCIAL + COLOPHON -->
