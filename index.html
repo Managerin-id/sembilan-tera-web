@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sembilan Tera — Profil Band</title>
+<meta name="description" content="Sembilan Tera — band pop alternatif asal Bandung. Profil, personil, diskografi, dan dokumentasi.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Inter:wght@400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="grain"></div>
+
+<!-- MASTHEAD -->
+<header class="masthead">
+  <div class="masthead-row">
+    <div class="mark" aria-hidden="true">
+      <svg viewBox="0 0 100 100" class="mark-svg">
+        <path d="M62 12 A38 38 0 1 0 62 88 A30 30 0 1 1 62 12 Z" />
+        <path d="M50 8 L54 20 L67 20 L57 28 L61 40 L50 32 L39 40 L43 28 L33 20 L46 20 Z" />
+      </svg>
+    </div>
+    <div class="masthead-center">
+      <span class="masthead-eyebrow" data-field="masthead.issueLabel">Volume I — Terbentuk 2025</span>
+      <h1 class="masthead-title" data-field="masthead.bandName">Sembilan Tera</h1>
+      <span class="masthead-tagline" data-field="masthead.tagline">Pop Alternatif — Bandung</span>
+    </div>
+    <div class="masthead-label">
+      <span>Rilisan oleh</span>
+      <strong data-field="masthead.label">Axara Pro Indonesia</strong>
+    </div>
+  </div>
+  <nav class="toc">
+    <a href="#cerita"><span class="toc-num">01</span> Cerita</a>
+    <a href="#personil"><span class="toc-num">02</span> Personil</a>
+    <a href="#diskografi"><span class="toc-num">03</span> Diskografi</a>
+    <a href="#karakter"><span class="toc-num">04</span> Karakter Musik</a>
+    <a href="#dokumentasi"><span class="toc-num">05</span> Dokumentasi</a>
+    <a href="#kontak"><span class="toc-num">06</span> Kontak</a>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-text">
+    <span class="kicker" data-field="hero.kicker">Profil Artis</span>
+    <h2 class="hero-headline" data-field="hero.headline">Sembilan Tera</h2>
+    <p class="hero-subhead" data-field="hero.subhead">Enam orang, satu luka yang sama.</p>
+    <dl class="facts" id="facts-list"></dl>
+  </div>
+  <figure class="hero-image">
+    <img data-field-src="hero.image" src="assets/img/group-hero.jpg" alt="Sembilan Tera, foto grup">
+    <figcaption data-field="hero.imageCaption">Sembilan Tera, format lengkap.</figcaption>
+  </figure>
+</section>
+
+<!-- ABOUT -->
+<section class="section about" id="cerita">
+  <div class="section-head">
+    <span class="kicker" data-field="about.kicker">Cerita</span>
+    <h3 class="section-title" data-field="about.title">Tentang Sembilan Tera</h3>
+  </div>
+  <div class="about-body">
+    <div class="about-text" id="about-paragraphs"></div>
+    <aside class="pull-quote">
+      <span class="quote-mark">&ldquo;</span>
+      <p data-field="about.pullQuote">Lirik jujur, tema emosional.</p>
+    </aside>
+  </div>
+</section>
+
+<div class="divider"><span class="divider-mark">✦</span></div>
+
+<!-- MEMBERS -->
+<section class="section members" id="personil">
+  <div class="section-head">
+    <span class="kicker" data-field="members.kicker">Kontributor</span>
+    <h3 class="section-title" data-field="members.title">Personil</h3>
+    <p class="section-intro" data-field="members.intro">Sembilan Tera digaungi oleh 6 orang personil.</p>
+  </div>
+  <div class="member-grid" id="member-grid"></div>
+</section>
+
+<div class="divider"><span class="divider-mark">✦</span></div>
+
+<!-- DISCOGRAPHY -->
+<section class="section discography" id="diskografi">
+  <div class="section-head">
+    <span class="kicker" data-field="discography.kicker">Rilisan</span>
+    <h3 class="section-title" data-field="discography.title">Diskografi</h3>
+  </div>
+  <div class="disco-spread">
+    <figure class="disco-cover">
+      <img data-field-src="discography.cover" src="assets/img/ep-cover.jpg" alt="Sampul EP Sementara Itu">
+    </figure>
+    <div class="disco-info">
+      <span class="disco-eyebrow"><span data-field="discography.releaseType">EP</span> · <span data-field="discography.releaseYear">2025</span></span>
+      <h4 class="disco-title" data-field="discography.releaseTitle">Sementara Itu</h4>
+      <p class="disco-desc" data-field="discography.description">Deskripsi rilisan.</p>
+      <div class="disco-meta">
+        <span data-field="discography.trackCount">5 Lagu</span>
+        <a data-field-href="discography.spotifyUrl" href="#" target="_blank" rel="noopener" class="disco-link">Dengarkan di Spotify →</a>
+      </div>
+    </div>
+  </div>
+  <figure class="disco-group">
+    <img data-field-src="discography.groupImage" src="assets/img/group-casual.jpg" alt="Sembilan Tera">
+  </figure>
+</section>
+
+<div class="divider"><span class="divider-mark">✦</span></div>
+
+<!-- CHARACTER -->
+<section class="section character" id="karakter">
+  <div class="section-head">
+    <span class="kicker" data-field="character.kicker">Karakter Musik</span>
+    <h3 class="section-title" data-field="character.title">Suara Sembilan Tera</h3>
+  </div>
+  <div class="character-text" id="character-paragraphs"></div>
+</section>
+
+<div class="divider"><span class="divider-mark">✦</span></div>
+
+<!-- GALLERY -->
+<section class="section gallery" id="dokumentasi">
+  <div class="section-head">
+    <span class="kicker" data-field="gallery.kicker">Foto Esai</span>
+    <h3 class="section-title" data-field="gallery.title">Dokumentasi Perform</h3>
+  </div>
+  <div class="gallery-grid" id="gallery-grid"></div>
+</section>
+
+<!-- SOCIAL + COLOPHON -->
+<footer class="colophon" id="kontak">
+  <div class="colophon-social">
+    <span class="kicker" data-field="social.kicker">Ikuti</span>
+    <h3 class="handle" data-field="social.handle">@SembilanTera</h3>
+    <div class="platform-row" id="platform-row"></div>
+  </div>
+  <div class="colophon-contact">
+    <span class="kicker" data-field="colophon.kicker">Manajemen &amp; Booking</span>
+    <strong class="agency" data-field="colophon.agency">Axara Pro Indonesia</strong>
+    <div id="phone-list"></div>
+  </div>
+  <div class="colophon-imprint">
+    <div class="mark small" aria-hidden="true">
+      <svg viewBox="0 0 100 100" class="mark-svg">
+        <path d="M62 12 A38 38 0 1 0 62 88 A30 30 0 1 1 62 12 Z" />
+        <path d="M50 8 L54 20 L67 20 L57 28 L61 40 L50 32 L39 40 L43 28 L33 20 L46 20 Z" />
+      </svg>
+    </div>
+    <p>Diterbitkan secara digital. Seluruh materi &amp; foto milik Sembilan Tera / Axara Pro Indonesia.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
