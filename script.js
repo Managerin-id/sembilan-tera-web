@@ -81,6 +81,26 @@ function render(data) {
     `).join('');
   }
 
+  // spotify embed
+  const spotifyFrame = document.getElementById('spotify-embed');
+  if (spotifyFrame && data.discography?.spotifyEmbedUrl) {
+    spotifyFrame.src = data.discography.spotifyEmbedUrl;
+  }
+
+  // media kit
+  const mediaKitGrid = document.getElementById('mediakit-grid');
+  if (mediaKitGrid && data.mediaKit?.images) {
+    mediaKitGrid.innerHTML = data.mediaKit.images.map(m => `
+      <div class="mediakit-item">
+        <img src="${escapeAttr(m.image)}" alt="${escapeAttr(m.label || 'Foto Sembilan Tera')}" loading="lazy">
+        <div class="mediakit-caption">
+          <span class="mediakit-label">${escapeHTML(m.label || '')}</span>
+          <a class="mediakit-download" href="${escapeAttr(m.image)}" download>Unduh</a>
+        </div>
+      </div>
+    `).join('');
+  }
+
   // social platforms
   const platformRow = document.getElementById('platform-row');
   if (platformRow && data.social?.platforms) {
