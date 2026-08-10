@@ -513,8 +513,14 @@ a { color: inherit; }
 
 .reels-grid {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 16px;
+  justify-items: center;
+}
+.reels-grid blockquote.instagram-media {
+  max-width: 100% !important;
+  min-width: 0 !important;
+  width: 100% !important;
 }
 .reels-grid iframe { width: 100% !important; }
 
@@ -653,7 +659,7 @@ a { color: inherit; }
   .gallery-grid { grid-template-columns: repeat(2, 1fr); }
   .gallery-item:nth-child(4n+1) { grid-row: span 1; aspect-ratio: 3/4; }
   .mediakit-grid { grid-template-columns: repeat(2, 1fr); }
-  .reels-grid { grid-template-columns: repeat(2, 1fr); }
+  .reels-grid { grid-template-columns: 1fr; max-width: 380px; margin: 0 auto; }
   .colophon { grid-template-columns: 1fr; }
   .colophon-contact { text-align: left; }
   .mark img { width: 56px; height: 56px; }
