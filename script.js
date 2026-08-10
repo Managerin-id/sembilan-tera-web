@@ -87,6 +87,36 @@ function render(data) {
     spotifyFrame.src = data.discography.spotifyEmbedUrl;
   }
 
+  // youtube playlist embed
+  const youtubeFrame = document.getElementById('youtube-embed');
+  if (youtubeFrame && data.videos?.youtubePlaylistEmbedUrl) {
+    youtubeFrame.src = data.videos.youtubePlaylistEmbedUrl;
+  }
+
+  // instagram reels
+  const reelsGrid = document.getElementById('reels-grid');
+  if (reelsGrid && data.videos?.reels) {
+    reelsGrid.innerHTML = data.videos.reels.map(r => `
+      <blockquote class="instagram-media" data-instgrm-permalink="${escapeAttr(r.url)}" data-instgrm-version="14" style="margin:0;width:100%;"></blockquote>
+    `).join('');
+    // ask Instagram's embed script to process the new blockquotes
+    if (window.instgrm && window.instgrm.Embeds) {
+      window.instgrm.Embeds.process();
+    } else {
+      // embed.js may still be loading; retry shortly
+      let tries = 0;
+      const retry = setInterval(() => {
+        tries++;
+        if (window.instgrm && window.instgrm.Embeds) {
+          window.instgrm.Embeds.process();
+          clearInterval(retry);
+        } else if (tries > 20) {
+          clearInterval(retry);
+        }
+      }, 300);
+    }
+  }
+
   // media kit
   const mediaKitGrid = document.getElementById('mediakit-grid');
   if (mediaKitGrid && data.mediaKit?.images) {
