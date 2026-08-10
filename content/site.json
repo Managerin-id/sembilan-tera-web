@@ -91,6 +91,21 @@
       { "name": "YouTube Music", "url": "https://music.youtube.com/" }
     ]
   },
+  "videos": {
+    "kicker": "Video",
+    "title": "Cuplikan & Dokumentasi Video",
+    "youtubeLabel": "Playlist YouTube — MV & Cuplikan",
+    "youtubePlaylistEmbedUrl": "https://www.youtube.com/embed/videoseries?list=UUFwUlCsArtthpZYHvJRmQBg",
+    "youtubeChannelUrl": "https://youtube.com/@sembilantera",
+    "reelsLabel": "Video Recap",
+    "reels": [
+      { "url": "https://www.instagram.com/reel/Dar5-PHJjbI/" },
+      { "url": "https://www.instagram.com/reel/Da2IkE_Jt8G/" },
+      { "url": "https://www.instagram.com/reel/Da73vtGgjYu/" },
+      { "url": "https://www.instagram.com/reel/DbCx0-7gpb1/" },
+      { "url": "https://www.instagram.com/reel/DbXnxLLg-IY/" }
+    ]
+  },
   "mediaKit": {
     "kicker": "Press Kit",
     "title": "Media Kit",
