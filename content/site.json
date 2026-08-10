@@ -9,7 +9,7 @@
     "kicker": "Profil Artis",
     "headline": "Sembilan Tera",
     "subhead": "Enam orang, satu luka yang sama — dibungkus brass section dan lirik yang tak berpura-pura baik-baik saja.",
-    "image": "assets/img/group-hero.jpg",
+    "image": "assets/img/group-hero.jpeg",
     "imageCaption": "Sembilan Tera, format lengkap. Dokumentasi studio, 2025."
   },
   "facts": [
@@ -33,12 +33,12 @@
     "title": "Personil",
     "intro": "Sembilan Tera digaungi oleh 6 orang personil.",
     "list": [
-      { "name": "Ezza", "role": "Vokal", "image": "assets/img/member-ezza.jpg" },
-      { "name": "Arie", "role": "Drum", "image": "assets/img/member-arie.jpg" },
-      { "name": "Ricky", "role": "Bass", "image": "assets/img/member-ricky.jpg" },
-      { "name": "Adityaas", "role": "Gitar", "image": "assets/img/member-adityaas.jpg" },
-      { "name": "Angga", "role": "Trombone", "image": "assets/img/member-angga.jpg" },
-      { "name": "Taufik", "role": "Keyboard", "image": "assets/img/member-taufik.jpg" }
+      { "name": "Ezza", "role": "Vokal", "image": "assets/img/member-ezza.jpeg" },
+      { "name": "Arie", "role": "Drum", "image": "assets/img/member-arie.jpeg" },
+      { "name": "Ricky", "role": "Bass", "image": "assets/img/member-ricky.jpeg" },
+      { "name": "Adityaas", "role": "Gitar", "image": "assets/img/member-adityaas.jpeg" },
+      { "name": "Angga", "role": "Trombone", "image": "assets/img/member-angga.jpeg" },
+      { "name": "Taufik", "role": "Keyboard", "image": "assets/img/member-taufik.jpeg" }
     ]
   },
   "discography": {
@@ -47,11 +47,11 @@
     "releaseType": "EP",
     "releaseTitle": "Sementara Itu",
     "releaseYear": "2025",
-    "cover": "assets/img/ep-cover.jpg",
+    "cover": "assets/img/ep-cover.jpeg",
     "description": "Mini album yang dibuat bukan untuk menyenangkan semua orang, melainkan untuk menemani mereka yang diam-diam sedang terluka. Berisi 5 lagu yang jujur soal rasa sakit, luka, kehilangan, amarah, dan kecewa. Semua karya telah tersedia di berbagai platform digital streaming serta dilengkapi Musik Video resmi di kanal YouTube Sembilan Tera.",
     "trackCount": "5 Lagu",
     "spotifyUrl": "https://open.spotify.com/intl-id/artist/1nEhg8AfnnLJv3RasrPNGA",
-    "groupImage": "assets/img/group-casual.jpg"
+    "groupImage": "assets/img/group-casual.jpeg"
   },
   "character": {
     "kicker": "Karakter Musik",
@@ -66,16 +66,16 @@
     "kicker": "Foto Esai",
     "title": "Dokumentasi Perform",
     "images": [
-      { "image": "assets/img/live-01.jpg", "caption": "Arie di balik drum, tenggelam dalam tempo." },
-      { "image": "assets/img/live-02.jpg", "caption": "Gitar melodi di depan nama panggung yang menyala." },
-      { "image": "assets/img/live-03.jpg", "caption": "Detail closeup, momen intensitas panggung." },
-      { "image": "assets/img/live-04.jpg", "caption": "Trombone, tanda tangan sonik Sembilan Tera." },
-      { "image": "assets/img/live-05.jpg", "caption": "Bass line yang menahan groove tetap megah." },
-      { "image": "assets/img/live-06.jpg", "caption": "Brass section, sentuhan khas band ini." },
-      { "image": "assets/img/live-07.jpg", "caption": "Vokal yang menghujam, panggung yang syahdu." },
-      { "image": "assets/img/live-08.jpg", "caption": "Keyboard, lapisan harmoni di balik layar." },
-      { "image": "assets/img/live-09.jpg", "caption": "Panggung penuh warna, format lengkap enam personil." },
-      { "image": "assets/img/live-10.jpg", "caption": "Bass di bawah lampu merah, penutup malam." }
+      { "image": "assets/img/live-01.jpeg", "caption": "Arie di balik drum, tenggelam dalam tempo." },
+      { "image": "assets/img/live-02.jpeg", "caption": "Gitar melodi di depan nama panggung yang menyala." },
+      { "image": "assets/img/live-03.jpeg", "caption": "Detail closeup, momen intensitas panggung." },
+      { "image": "assets/img/live-04.jpeg", "caption": "Trombone, tanda tangan sonik Sembilan Tera." },
+      { "image": "assets/img/live-05.jpeg", "caption": "Bass line yang menahan groove tetap megah." },
+      { "image": "assets/img/live-06.jpeg", "caption": "Brass section, sentuhan khas band ini." },
+      { "image": "assets/img/live-07.jpeg", "caption": "Vokal yang menghujam, panggung yang syahdu." },
+      { "image": "assets/img/live-08.jpeg", "caption": "Keyboard, lapisan harmoni di balik layar." },
+      { "image": "assets/img/live-09.jpeg", "caption": "Panggung penuh warna, format lengkap enam personil." },
+      { "image": "assets/img/live-10.jpeg", "caption": "Bass di bawah lampu merah, penutup malam." }
     ]
   },
   "social": {
