@@ -31,11 +31,12 @@ body {
   margin: 0;
   background-color: var(--ink);
   background-image:
-    radial-gradient(ellipse 900px 650px at 12% -8%, rgba(176, 141, 79, 0.24), transparent 62%),
-    radial-gradient(ellipse 850px 750px at 108% 20%, rgba(122, 32, 32, 0.26), transparent 62%),
-    radial-gradient(ellipse 1000px 800px at -8% 82%, rgba(176, 141, 79, 0.16), transparent 62%),
-    radial-gradient(ellipse 750px 650px at 100% 100%, rgba(122, 32, 32, 0.18), transparent 62%),
-    radial-gradient(ellipse 600px 500px at 50% 45%, rgba(176, 141, 79, 0.05), transparent 70%);
+    radial-gradient(ellipse 900px 650px at 12% -8%, rgba(176, 141, 79, 0.30), transparent 60%),
+    radial-gradient(ellipse 850px 750px at 108% 20%, rgba(122, 32, 32, 0.32), transparent 60%),
+    radial-gradient(ellipse 1000px 800px at -8% 82%, rgba(176, 141, 79, 0.20), transparent 60%),
+    radial-gradient(ellipse 750px 650px at 100% 100%, rgba(122, 32, 32, 0.22), transparent 60%),
+    radial-gradient(ellipse 700px 600px at 50% 0%, rgba(176, 141, 79, 0.10), transparent 65%),
+    linear-gradient(180deg, rgba(0,0,0,0.35) 0%, transparent 12%, transparent 88%, rgba(0,0,0,0.4) 100%);
   background-attachment: fixed;
   background-repeat: no-repeat;
   color: var(--paper);
@@ -44,6 +45,21 @@ body {
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
   overflow-x: hidden;
+}
+
+/* premium framing border, like the edge of a bound print piece */
+.frame {
+  position: fixed;
+  inset: 10px;
+  pointer-events: none;
+  z-index: 210;
+  border: 1px solid rgba(176, 141, 79, 0.35);
+}
+.frame::before {
+  content: "";
+  position: absolute;
+  inset: 5px;
+  border: 1px solid rgba(176, 141, 79, 0.12);
 }
 
 /* textured concrete/paper canvas, echoing the band's own press-kit texture */
@@ -157,6 +173,10 @@ a { color: inherit; }
   font-size: clamp(1.6rem, 5vw, 2.6rem);
   margin: 4px 0 2px;
   letter-spacing: -0.01em;
+  background: linear-gradient(115deg, #d9bc7f 10%, #f4e4b8 35%, #b08d4f 55%, #e8cd8f 75%, #ad8a4c 90%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }
 
 .masthead-tagline {
@@ -189,6 +209,16 @@ a { color: inherit; }
   padding: 14px 0;
   justify-content: center;
   border-top: 1px solid var(--rule);
+  position: relative;
+}
+.toc::before {
+  content: "";
+  position: absolute;
+  top: -4px;
+  left: var(--edge);
+  right: var(--edge);
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(176,141,79,0.4) 20%, rgba(176,141,79,0.4) 80%, transparent);
 }
 .toc a {
   font-family: var(--font-mono);
@@ -250,7 +280,11 @@ a { color: inherit; }
   font-size: clamp(2.6rem, 7vw, 5rem);
   line-height: 0.98;
   margin: 6px 0 20px;
-  color: var(--paper);
+  background: linear-gradient(115deg, #d9bc7f 5%, #f6e8c2 30%, #b08d4f 50%, #eecf94 70%, #a3813f 92%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  filter: drop-shadow(0 2px 18px rgba(176, 141, 79, 0.25));
 }
 
 .hero-subhead {
@@ -293,6 +327,7 @@ a { color: inherit; }
   object-fit: cover;
   filter: grayscale(15%) contrast(1.05);
   border: 1px solid var(--rule);
+  box-shadow: 0 20px 60px -15px rgba(0,0,0,0.6), 0 0 0 1px rgba(176,141,79,0.08), 0 0 40px -10px rgba(176,141,79,0.15);
 }
 .hero-image figcaption {
   font-family: var(--font-mono);
@@ -407,6 +442,11 @@ a { color: inherit; }
   background: var(--ink);
   position: relative;
   overflow: hidden;
+  transition: box-shadow 0.4s ease;
+}
+.member-card:hover {
+  box-shadow: 0 25px 50px -12px rgba(0,0,0,0.7), 0 0 30px -8px rgba(176,141,79,0.2);
+  z-index: 2;
 }
 .member-card img {
   width: 100%;
@@ -730,6 +770,31 @@ a { color: inherit; }
   font-size: 0.72rem;
   color: var(--grey);
   margin: 0;
+  line-height: 1.6;
+}
+.dev-credit {
+  font-family: var(--font-mono);
+  font-size: 0.62rem;
+  letter-spacing: 0.04em;
+  color: var(--brass-soft);
+  opacity: 0.7;
+}
+
+/* small persistent developer watermark, bottom-right */
+.dev-watermark {
+  position: fixed;
+  bottom: 18px;
+  right: 22px;
+  z-index: 190;
+  font-family: var(--font-mono);
+  font-size: 0.6rem;
+  letter-spacing: 0.05em;
+  color: rgba(239, 230, 211, 0.35);
+  pointer-events: none;
+  writing-mode: horizontal-tb;
+}
+@media (max-width: 640px) {
+  .dev-watermark { font-size: 0.52rem; bottom: 12px; right: 12px; }
 }
 
 /* ============ RESPONSIVE ============ */
