@@ -31,10 +31,11 @@ body {
   margin: 0;
   background-color: var(--ink);
   background-image:
-    radial-gradient(ellipse 900px 600px at 15% -5%, rgba(176, 141, 79, 0.13), transparent 60%),
-    radial-gradient(ellipse 800px 700px at 105% 25%, rgba(122, 32, 32, 0.14), transparent 60%),
-    radial-gradient(ellipse 1000px 800px at -5% 85%, rgba(176, 141, 79, 0.08), transparent 60%),
-    radial-gradient(ellipse 700px 600px at 100% 100%, rgba(122, 32, 32, 0.09), transparent 60%);
+    radial-gradient(ellipse 900px 650px at 12% -8%, rgba(176, 141, 79, 0.24), transparent 62%),
+    radial-gradient(ellipse 850px 750px at 108% 20%, rgba(122, 32, 32, 0.26), transparent 62%),
+    radial-gradient(ellipse 1000px 800px at -8% 82%, rgba(176, 141, 79, 0.16), transparent 62%),
+    radial-gradient(ellipse 750px 650px at 100% 100%, rgba(122, 32, 32, 0.18), transparent 62%),
+    radial-gradient(ellipse 600px 500px at 50% 45%, rgba(176, 141, 79, 0.05), transparent 70%);
   background-attachment: fixed;
   background-repeat: no-repeat;
   color: var(--paper);
@@ -43,6 +44,44 @@ body {
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
   overflow-x: hidden;
+}
+
+/* textured concrete/paper canvas, echoing the band's own press-kit texture */
+.texture {
+  position: fixed;
+  inset: -5%;
+  width: 110%;
+  height: 110%;
+  pointer-events: none;
+  z-index: 1;
+  background-image: url("assets/img/grunge-texture.jpg");
+  background-size: 900px 900px;
+  background-repeat: repeat;
+  opacity: 0.16;
+  mix-blend-mode: overlay;
+  animation: texture-drift 50s linear infinite;
+}
+@keyframes texture-drift {
+  from { transform: translate(0, 0); }
+  to { transform: translate(-120px, -90px); }
+}
+
+/* slow breathing spotlight, like stage lighting shifting during a set */
+.spotlight {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 2;
+  background: radial-gradient(ellipse 55% 45% at 50% 15%, rgba(176, 141, 79, 0.10), transparent 65%);
+  animation: spotlight-breathe 14s ease-in-out infinite alternate;
+}
+@keyframes spotlight-breathe {
+  from { opacity: 0.6; transform: scale(1); }
+  to { opacity: 1; transform: scale(1.08); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .texture, .spotlight { animation: none !important; }
 }
 
 img { max-width: 100%; display: block; }
